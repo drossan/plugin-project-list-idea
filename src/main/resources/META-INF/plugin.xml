@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.drossan.project-list</id>
+    <name>Project-list</name>
+    <version>1.0.0</version>
+    <vendor email="hi@drossan.com" url="https://www.drossan.com">Drossan</vendor>
+
+    <description><![CDATA[
+      A plugin to list files and directories with options to ignore specific directories.
+      <br><br>
+      Licensed under the MIT License.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Declarar la acción -->
+    <actions>
+        <action id="com.drossan.projectlist.ListDirAction" class="com.drossan.projectlist.ListDirAction" text="List Directories" description="List files and directories with ignore options">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
